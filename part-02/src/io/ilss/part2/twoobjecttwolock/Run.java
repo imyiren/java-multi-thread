@@ -12,6 +12,7 @@ public class Run {
     public static void main(String[] args) {
         HasSelfPrivateNum numRef1 = new HasSelfPrivateNum();
         HasSelfPrivateNum numRef2 = new HasSelfPrivateNum();
+        //多个对象会产生多个锁，也就是说，两个互不干扰
         ThreadA aThread = new ThreadA(numRef1);
         ThreadB bThread = new ThreadB(numRef2);
         aThread.start();
