@@ -18,4 +18,15 @@ public class MyObject {
             e.printStackTrace();
         }
     }
+
+    public void methodB() {
+        try {
+            System.out.println("begin method B thread name = " + Thread.currentThread().getName());
+            Thread.sleep(5000);
+            System.out.println("end");
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+    }
 }

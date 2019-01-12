@@ -17,6 +17,7 @@ public class ThreadB extends Thread {
     @Override
     public void run() {
         super.run();
+        object.methodB();
         object.methodA();
     }
 }
