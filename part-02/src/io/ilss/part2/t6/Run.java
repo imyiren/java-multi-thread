@@ -10,6 +10,9 @@ package io.ilss.part2.t6;
  */
 public class Run {
     public static void main(String[] args) {
+        /**
+         * 利用方法内的临时对象用synchronized代码块实现lock。
+         */
         Task task = new Task();
         ThreadA aThread = new ThreadA(task);
         ThreadB bThread = new ThreadB(task);
