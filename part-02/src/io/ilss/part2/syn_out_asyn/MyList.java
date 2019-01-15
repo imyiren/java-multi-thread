@@ -15,13 +15,13 @@ public class MyList {
     private List list = new ArrayList();
 
     synchronized public void add(String username) {
-        System.out.println("thread name = " + Thread.currentThread().getName() + " run add method");
+        System.out.println("thread name = " + Thread.currentThread().getName() + " Run add method");
         list.add(username);
         System.out.println("thread name = " + Thread.currentThread().getName() + " out add method");
     }
 
     synchronized public int getSize() {
-        System.out.println("thread name = " + Thread.currentThread().getName() + " run getSize method");
+        System.out.println("thread name = " + Thread.currentThread().getName() + " Run getSize method");
         int sizeValue = list.size();
         System.out.println("thread name = " + Thread.currentThread().getName() + " out getSize method");
         return sizeValue;

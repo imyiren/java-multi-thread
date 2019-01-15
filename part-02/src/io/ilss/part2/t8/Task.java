@@ -10,7 +10,7 @@ package io.ilss.part2.t8;
  */
 public class Task {
     synchronized public void otherMethod() {
-            System.out.println("-----------------------------------run other method !");
+            System.out.println("-----------------------------------Run other method !");
     }
     public void doLongTimeTask() {
         synchronized (this) {

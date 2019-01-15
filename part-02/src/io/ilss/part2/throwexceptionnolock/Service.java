@@ -13,15 +13,15 @@ import sun.jvm.hotspot.debugger.ThreadContext;
 public class Service {
     synchronized public void testMethod() {
         if ("a".equals(Thread.currentThread().getName())) {
-            System.out.println("Thread name = " + Thread.currentThread().getName() + " run begin time = " + System.currentTimeMillis());
+            System.out.println("Thread name = " + Thread.currentThread().getName() + " Run begin time = " + System.currentTimeMillis());
             while (true) {
                 if ("0.123456".equals(("" + Math.random()).substring(0, 8))) {
-                    System.out.println("Thread name = " + Thread.currentThread().getName() + " run exception = " + System.currentTimeMillis());
+                    System.out.println("Thread name = " + Thread.currentThread().getName() + " Run exception = " + System.currentTimeMillis());
                     Integer.parseInt("a");
                 }
             }
         } else {
-            System.out.println("Thread B run time = " + System.currentTimeMillis());
+            System.out.println("Thread B Run time = " + System.currentTimeMillis());
         }
     }
 }

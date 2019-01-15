@@ -11,9 +11,9 @@ package io.ilss.part2.test3;
 public class MyObject {
     public void speedPrintString() {
         synchronized (this) {
-            System.out.println("speedPrintString __getLock time = " + System.currentTimeMillis() + " run thread name " + Thread.currentThread().getName());
+            System.out.println("speedPrintString __getLock time = " + System.currentTimeMillis() + " Run thread name " + Thread.currentThread().getName());
             System.out.println("------------------------------------------------");
-            System.out.println("speedPrintString releaseLock time = " + System.currentTimeMillis() + " run thread name " + Thread.currentThread().getName());
+            System.out.println("speedPrintString releaseLock time = " + System.currentTimeMillis() + " Run thread name " + Thread.currentThread().getName());
         }
 
     }
