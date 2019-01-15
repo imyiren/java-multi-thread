@@ -12,7 +12,7 @@ public class Run {
     public static void main(String[] args) {
         try {
             /**
-             * 只要对象不变，及时对象的属性被改变，运行的结果还是同步。
+             * 只要对象不变，即使对象的属性被改变，运行的结果还是同步。
              */
             Service service = new Service();
             UserInfo userInfo = new UserInfo();
