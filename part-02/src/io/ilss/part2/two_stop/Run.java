@@ -13,7 +13,7 @@ public class Run {
         /**
          * B线程永远得不到机会运行
          *
-         * 更改service 把synchronized方法改成改成synchronized代码块。
+         * 更改service 把synchronized方法改成改成使用Object对象的synchronized代码块。
          *
          */
         Service service = new Service();
