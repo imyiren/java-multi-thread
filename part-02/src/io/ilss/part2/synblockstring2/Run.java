@@ -12,6 +12,7 @@ public class Run {
     public static void main(String[] args) {
         /**
          * 验证synchronized方法与同步synchronized(非this对象)是异步调用
+         * 由于对象监视器不同，所以结果就是异步的。
          */
         Service service = new Service();
         ThreadA aThread = new ThreadA(service);
