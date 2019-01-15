@@ -13,7 +13,8 @@ public class Run {
         /**
          * 此时操作的时候由于同步锁，在进入addServiceMethod方法的时候。
          * 还没有加进去，所以两个在加的时候都为0，所以会出现两个都加进去了
-         *
+         * 出现了脏读，原因是两个线程以异步的方式返回list参数的size大小。
+         *  解决方法：把if(list.getSize()<1){}变为同步代码块 加上锁异步调用。
          */
         MyOneList list = new MyOneList();
         ThreadA aThread = new ThreadA(list);
