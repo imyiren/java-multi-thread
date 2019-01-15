@@ -10,6 +10,9 @@ package io.ilss.part2.synstaticmethod;
  */
 public class Run {
     public static void main(String[] args) {
+        /**
+         * 类的同步锁
+         */
         ThreadA aThread = new ThreadA();
         ThreadB bThread = new ThreadB();
         aThread.setName("A");
