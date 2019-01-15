@@ -2,3 +2,6 @@
 *.iml
 .idea/
 */*.iml
+out/
+target/
+
