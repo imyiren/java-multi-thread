@@ -14,6 +14,9 @@ public class Run {
          * 如果是正常运行会显示线程被停止
          * 如果在idea上 edit configurations 中 program arguments设置-server
          * 该线程将一直执行，不停止。
+         * 这是由于私有堆栈中的值和共有堆栈中的值不同步造成的。
+         * 解决这个问题就需要用volatile关键字，他的主要作用是当线程访问isRunning这个变量时，强制性从共有堆栈中进行取值。
+         *
          */
         try {
             RunThread thread = new RunThread();
