@@ -9,7 +9,7 @@ package io.ilss.part2.t16;
  * @date 2019/1/15 下午8:38
  */
 public class RunThread extends Thread {
-    private boolean isRunning = true;
+    volatile private boolean isRunning = true;
     public boolean isRunning() {
         return isRunning;
     }
