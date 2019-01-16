@@ -14,6 +14,8 @@ public class Test {
          * 一个notify仅随机唤醒一个线程
          *
          * notify调用多少次就唤醒多少对应wait的线程，多的自动忽略
+         *
+         * 唤醒所有  直接notifyAll()
          */
         Object lock = new Object();
         ThreadA aThread = new ThreadA(lock);
