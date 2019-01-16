@@ -1,7 +1,7 @@
 package io.ilss.part3.wait_notify_size5;
 
 /**
- * className ThreadB
+ * className NotifyThread
  * description
  *
  * @author feng

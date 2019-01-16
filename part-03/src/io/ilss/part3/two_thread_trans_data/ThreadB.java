@@ -1,7 +1,7 @@
 package io.ilss.part3.two_thread_trans_data;
 
 /**
- * className ThreadB
+ * className NotifyThread
  * description
  *
  * @author feng
