@@ -1,7 +1,7 @@
 package io.ilss.part3.notify_one;
 
 /**
- * className ThreadC
+ * className ThreadCu
  * description
  *
  * @author feng
