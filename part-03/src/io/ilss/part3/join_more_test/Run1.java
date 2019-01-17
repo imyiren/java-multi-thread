@@ -1,4 +1,4 @@
-package io.ilss.part3.join_sleep_2;
+package io.ilss.part3.join_more_test;
 
 /**
  * className Run1
@@ -6,20 +6,17 @@ package io.ilss.part3.join_sleep_2;
  *
  * @author feng
  * @version 1.0
- * @date 2019/1/17 下午8:51
+ * @date 2019/1/17 下午9:15
  */
-public class Run {
+public class Run1 {
     public static void main(String[] args) {
         try {
-            /**
-             * 验证join会释放锁
-             */
             ThreadB b = new ThreadB();
             ThreadA a = new ThreadA(b);
             a.start();
-            Thread.sleep(1000);
-            ThreadC c = new ThreadC(b);
-            c.start();
+            b.start();
+            b.join(2000);
+            System.out.println("main end " + System.currentTimeMillis());
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

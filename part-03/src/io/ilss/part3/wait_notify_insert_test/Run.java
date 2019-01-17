@@ -1,7 +1,7 @@
 package io.ilss.part3.wait_notify_insert_test;
 
 /**
- * className Run
+ * className Run1
  * description
  *
  * @author feng

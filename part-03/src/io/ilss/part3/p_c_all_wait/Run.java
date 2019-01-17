@@ -2,7 +2,7 @@ package io.ilss.part3.p_c_all_wait;
 
 
 /**
- * className Run
+ * className Run1
  * description
  *
  * @author feng
