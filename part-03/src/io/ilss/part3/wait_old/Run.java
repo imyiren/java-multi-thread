@@ -1,7 +1,7 @@
 package io.ilss.part3.wait_old;
 
 /**
- * className Run
+ * className Run1
  * description
  *
  * @author feng
