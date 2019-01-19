@@ -7,16 +7,15 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 /**
- * className Run2
- * description Run2
+ * className Run3
+ * description Run3
  *
  * @author feng
  * @version 1.0
- * @date 2019-01-19 23:38
+ * @date 2019-01-19 23:44
  */
-public class Run2 {
+public class Run3 {
     public static void main(String[] args) throws ParseException {
-        //书上代码有问题
         Timer timer = new Timer();
         TimerTask task1 = new TimerTask() {
             private int count = 0;
@@ -24,9 +23,9 @@ public class Run2 {
             public void run() {
                 System.out.println("A 运行了，时间为" + new Date());
                 count++;
-                //执行5次然后清除自己这个任务
+                //当执行到第五次A的时候取消timer到任务
                 if (count == 5) {
-                    this.cancel();
+                    timer.cancel();
                 }
             }
         };
@@ -44,5 +43,6 @@ public class Run2 {
         //从date开始 每4秒执行一次 如果计划早于当前时间则立即执行
         timer.schedule(task1, date, 4000);
         timer.schedule(task2, date, 4000);
+
     }
 }
