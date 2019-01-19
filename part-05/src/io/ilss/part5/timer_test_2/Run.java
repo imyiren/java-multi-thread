@@ -30,7 +30,7 @@ public class Run {
         String dateString = "2019-01-19 23:33:00";
         Date date = sdf.parse(dateString);
         System.out.println("dateString : " + date.toLocaleString() + " CurrentDate : " + new Date().toLocaleString());
-        //从date开始 每4秒执行一次
+        //从date开始 每4秒执行一次 如果计划遭遇当前时间则立即执行
         timer.schedule(task, date, 4000);
     }
 }
