@@ -9,4 +9,7 @@ package io.ilss.part5.timer_test_2;
  * @date 2019/1/18 下午9:46
  */
 public class Run {
+    public static void main(String[] args) {
+
+    }
 }
