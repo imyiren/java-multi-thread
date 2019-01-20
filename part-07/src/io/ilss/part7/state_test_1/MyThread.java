@@ -16,6 +16,6 @@ public class MyThread extends Thread {
     @Override
     public void run() {
         super.run();
-        System.out.println("       Run method state : " + Thread.currentThread().getState());
+        System.out.println("       Run1 method state : " + Thread.currentThread().getState());
     }
 }

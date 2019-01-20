@@ -1,8 +1,8 @@
 package io.ilss.part7.thread_group_2;
 
 /**
- * className Run
- * description Run
+ * className Run1
+ * description Run1
  *
  * @author feng
  * @version 1.0
@@ -18,6 +18,5 @@ public class Run {
         }
         MyThread t = new MyThread(group, "Exception Thread ", "AA");
         t.start();
-
     }
 }
