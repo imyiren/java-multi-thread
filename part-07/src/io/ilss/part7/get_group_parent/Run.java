@@ -1,8 +1,8 @@
 package io.ilss.part7.get_group_parent;
 
 /**
- * className Run
- * description Run
+ * className Run1
+ * description Run1
  *
  * @author feng
  * @version 1.0
