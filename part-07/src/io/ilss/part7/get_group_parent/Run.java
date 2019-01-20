@@ -11,7 +11,7 @@ package io.ilss.part7.get_group_parent;
 public class Run {
     public static void main(String[] args) {
         System.out.println("Thread : " + Thread.currentThread().getName() + "This thread group name is " + Thread.currentThread().getThreadGroup().getName());
-        System.out.println("The parent thread name of Main thread group is " + Thread.currentThread().getThreadGroup().getParent().getName());
+        System.out.println("The parent thread name of Main1 thread group is " + Thread.currentThread().getThreadGroup().getParent().getName());
         System.out.println("The parent thread name of parent thread of main thread group is " + Thread.currentThread().getThreadGroup().getParent().getName());
     }
 }

@@ -20,7 +20,7 @@ public class Run {
         MyThread t = new MyThread();
         t.start();
         Thread.sleep(1000);
-        System.out.println("Main method state : " + t.getState());
+        System.out.println("Main1 method state : " + t.getState());
 
     }
 }

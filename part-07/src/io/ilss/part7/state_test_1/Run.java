@@ -18,11 +18,11 @@ public class Run {
     public static void main(String[] args) {
         try {
             MyThread t = new MyThread();
-            System.out.println(" 1    Main method state : " + t.getState());
+            System.out.println(" 1    Main1 method state : " + t.getState());
             Thread.sleep(1000);
             t.start();
             Thread.sleep(1000);
-            System.out.println(" 2    Main method state : " + t.getState());
+            System.out.println(" 2    Main1 method state : " + t.getState());
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

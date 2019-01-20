@@ -14,7 +14,7 @@ public class Run {
             MyThread t1 = new MyThread();
             t1.start();
             Thread.sleep(1000);
-            System.out.println("Main method t state : " + t1.getState());
+            System.out.println("Main1 method t state : " + t1.getState());
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
