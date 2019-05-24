@@ -10,6 +10,7 @@ package io.ilss.part3.wait_notify_insert_test;
  */
 public class DBTools {
     volatile private boolean prevIsA = false;
+
     synchronized public void backUpA() {
         try {
             while (prevIsA) {

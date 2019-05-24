@@ -15,7 +15,7 @@ public class HasSelfPrivateNum {
      * 如果不加synchronized 则会出现 实例变量非线程安全，多个线程共同访问num而导致的数据错误
      * @param username
      */
-     public synchronized void addI(String username) {
+    synchronized public void addI(String username) {
         try {
             if ("a".equals(username)) {
                 num = 100;

@@ -1,7 +1,7 @@
 package io.ilss.part2.syn_not_extends;
 
 /**
- * className Test
+ * className LRUCache
  * description
  *
  * @author feng

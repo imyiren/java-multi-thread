@@ -12,12 +12,13 @@ public class ThreadA extends Thread {
     private MyList list;
 
     public ThreadA(MyList list) {
+        super();
         this.list = list;
     }
 
     @Override
     public void run() {
-        super.run();
+        //super.run();
         try {
             for (int i = 0; i < 10; i++) {
                 list.add();
