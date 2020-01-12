@@ -10,7 +10,7 @@ package io.ilss.part6.singleton_7;
  */
 
 public class MyObject {
-    private static MyObject object;
+    //private static MyObject object;
 
     private static class MyObjectHandler {
         private static MyObject object = new MyObject();

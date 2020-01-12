@@ -12,8 +12,6 @@ import java.io.Serializable;
  */
 
 public class MyObject implements Serializable {
-    private static MyObject object;
-
     private static class MyObjectHandler {
         private static MyObject object = new MyObject();
     }

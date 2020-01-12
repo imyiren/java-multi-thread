@@ -1,7 +1,7 @@
 package io.ilss.part3.wait_release_lock;
 
 /**
- * className Test
+ * className LRUCache
  * description
  *
  * @author feng

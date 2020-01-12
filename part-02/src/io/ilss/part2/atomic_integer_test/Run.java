@@ -1,5 +1,6 @@
 package io.ilss.part2.atomic_integer_test;
 
+
 /**
  * className Run
  * description
@@ -13,7 +14,7 @@ public class Run {
         /**
          * i++除了synchronized关键字实现同步以外，使用原子类AtomicInteger原子类也可以进行实现。
          */
-        AddCountThread countService = new AddCountThread();
+        io.ilss.part2.atomic_integer_test.AddCountThread countService = new io.ilss.part2.atomic_integer_test.AddCountThread();
         Thread[] thread = new Thread[5];
         for (int i = 0; i < 5; i++) {
             thread[i] = new Thread(countService);

@@ -3,8 +3,8 @@ package io.ilss.part7.format_error;
 import java.text.SimpleDateFormat;
 
 /**
- * className Test
- * description Test
+ * className LRUCache
+ * description LRUCache
  *
  * @author feng
  * @version 1.0

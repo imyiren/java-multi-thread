@@ -1,7 +1,7 @@
 package io.ilss.part3.wait_interrupt_exception;
 
 /**
- * className Test
+ * className LRUCache
  * description
  *
  * @author feng
