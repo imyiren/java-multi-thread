@@ -10,7 +10,7 @@ package com.imyiren.part6.singleton_5;
  */
 
 public class MyObject {
-    private static MyObject object;
+    private static volatile MyObject object;
 
     public static MyObject getInstance() {
 
